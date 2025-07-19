@@ -106,8 +106,10 @@ CREATE TABLE customer (
   address TEXT,
   account_type VARCHAR(20),
   status VARCHAR(10),
-  balance DECIMAL(15,2)
+  balance DECIMAL(15,2),
+  account_opened_at DATETIME
 );
+
 🧑‍💻 Author
 Built with 💻 by Abdulmumuni Ajoge Adavize
 
