@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import java.time.LocalDateTime;
 
 @Entity
 public class Customer {
@@ -21,8 +22,9 @@ public class Customer {
     private String phoneNumber;
     private String address;
     private String accountType;
-    private String status; // "Active" or "Dormant"
+    private String status;
     private Double balance;
+    private LocalDateTime accountOpenedAt;
 
     public Long getId() {
         return id;
@@ -128,4 +130,11 @@ public class Customer {
         this.balance = balance;
     }
 
+    public LocalDateTime getAccountOpenedAt() {
+        return accountOpenedAt;
+    }
+
+    public void setAccountOpenedAt(LocalDateTime accountOpenedAt) {
+        this.accountOpenedAt = accountOpenedAt;
+    }
 }

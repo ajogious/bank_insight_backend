@@ -15,7 +15,7 @@ public class CustomerService {
         } else if (phone != null) {
             return customerRepository.findByPhoneNumber(phone);
         } else {
-            return null; // or throw an exception if both are null
+            return null;
         }
     }
 }
