@@ -1,0 +1,24 @@
+# Node.js / React + Vite
+node_modules/
+dist/
+.env
+.vite/
+
+# Java / Spring Boot
+target/
+*.log
+*.class
+
+# Maven
+.mvn/
+!**/src/main/**/target/
+!**/src/test/**/target/
+mvnw
+mvnw.cmd
+
+# VS Code
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
